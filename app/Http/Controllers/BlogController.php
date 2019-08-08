@@ -22,7 +22,6 @@ class BlogController extends Controller
         $data = $service->getResponse();
 
         $layout = $tag ? Tag::layout($tag) : 'blog.roll-layouts.home';
-
         return view($layout, $data);
     }
 
